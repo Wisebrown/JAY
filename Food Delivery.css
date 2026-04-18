@@ -1,0 +1,602 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 395vh;
+    color: rgb(31, 31, 31);
+}
+/* -----------HEADER SECTION------------ */
+header{
+    position: relative;
+    z-index: 7;
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 0px 20px;
+    position: fixed;
+}
+header div a{
+    color: rgb(31, 31, 31);
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+header div a:not(.cart):hover{
+    color: #ff8c00;
+
+}
+header div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+header div div{
+
+    width: 30px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #ff8c00; 
+    display: flex;
+    
+}
+header div div img{
+    width: 50px;
+    height: 30px;
+}
+header img.cart{
+    width: 30px;
+    height: 30px;
+    display: flex;
+}
+header div.left{
+    display: flex;
+    gap: 10px;
+    color: black;
+    text-decoration: none;
+}
+header div.left span{
+    color: #ff8c00;
+}
+header div.center{
+    display: flex;
+    gap: 20px;
+    color: black;
+    text-decoration: none;
+}
+header div.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #ffffff;
+    text-decoration: none;
+}
+header div.right .cartbtn{
+    background-color: #ff8c00; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* ------------MAIN SECTION----------------- */
+section {
+    width: 100%;
+    height: fit-content;
+    background-color: #ff8c00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 35vh;
+}
+section div.dashbord{
+    width: 100%;
+    height: 90vh;
+    color: #ffffff;
+    display: flex;
+    font-size: 2rem;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    background: linear-gradient(to right, rgba(0,0,0,0.8),rgba(0,0,0,0.1)),url(images/peakpx.jpg) ;
+}
+/* ------------DASHBORD SECTION----------------- */
+section div.dashbord div.minDashbord{
+    width: 58%;
+    height: 10vh;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 10px;
+}
+section div.dashbord div.minDashbord div{
+    display: flex;
+    gap: 20px;
+}
+section div.dashbord div.minDashbord div.location{
+    border-right: 2px solid #B8B8B8;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section div.dashbord div.minDashbord img{
+    width: 25px;
+    height: 25px;
+}
+section div.dashbord div.minDashbord input{
+    width: 260px;
+    height: 30px;
+    font-size: 1.1rem;
+    outline: none;
+    border: none;
+}
+section div.dashbord div.minDashbord input::placeholder{
+    font-size: 1.1rem;
+    color: #B8B8B8;
+}
+button{
+    width: 100px;
+    height: 50px;
+    font-size: 1.1rem;
+    outline: none;
+    border: none;
+    background-color: #ff8c00;
+    border-radius: 6px;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* button:hover{
+    width: 100px;
+    height: 50px;
+    font-size: 1.1rem;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+} */
+/* ---------------------FOOD COUNTRIES----------------- */
+.foodCountries{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    padding: 50px 20px;
+    background-color: rgb(243, 243, 243);
+    gap: 10vh;
+}
+.foodCountries div.texts{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.foodCountries div.texts h1{
+    color: rgb(29, 28, 28);
+}
+.foodCountries div.texts h3{
+    color: #acabab;
+}
+.foodCountries div.texts p{
+    color: #ff8c00;
+    font-weight: bold;
+    font-family: 1.2rem;
+}
+.foodCountries div.texts p:hover{
+    color: #ff8c00;
+    font-weight: bold;
+    font-family: 1.2rem;
+    text-decoration: underline;
+}
+/* -------------FOOD COUNTRIES------------ */
+div.foodCountries .foods{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 15px;
+}
+.foodCountries div.foods div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+.foodCountries div.foods img{
+    height: 150px;
+    width: 150px;
+    /* aspect-ratio: 3/4; */
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+    box-shadow: 5px 5px 5px hsl(0, 0%, 80%);
+    transition: 0.05s ease;
+}
+.foodCountries div.foods p{
+    font-size: 1.3rem;
+    font-weight: bold;
+    transition: 0.05s ease;
+}
+.foodCountries div.foods div:hover img{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 5px solid #ff8c00;
+    box-shadow: 5px 5px 5px hsl(0, 0%, 80%);
+    
+}
+.foodCountries div.foods div:hover p{
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #ff8c00;
+    
+}
+/* ------------RESTAURANTS SECTION---------------- */
+.restaurants{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    padding: 50px 20px;
+    transition: 0.5s ease;
+    gap: 20px;
+}
+.restaurants div.texts{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.restaurants div.texts div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    
+}
+.restaurants div.texts a{
+
+    color: #969696;
+    border: 1px solid #B8B8B8;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.restaurants div.texts a.activeBtn{
+
+    color: #ff8c00;
+    border: 1px solid #ff8c00;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    background-color: #ff8c001e;
+}
+.restaurants div.texts a:hover{
+    color: #ff8c00;
+    border: 1px solid #ff8c00;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    background-color: #ff8c001e;
+}
+.restaurants div.texts h3{
+
+    color: #B8B8B8;
+}
+.restaurant{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.restaurant div.places{
+    width: 300px;
+    height: 400px;
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    display: inline-block;
+    margin-right: 10px;
+    /* border: 2px solid black; */
+}
+.restaurant div.places:hover{
+    width: 300px;
+    height: 400px;
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    box-shadow: 0px 10px 5px #e0e0e0;
+}
+.restaurant div.places:hover h3{
+    color: #ff8c00;
+}
+.restaurant div.places:hover > main > img{
+    transform: scale(1.1);
+}
+.restaurant div main > img{
+    width: 300px;
+    height: 250px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    transition: 0.5s ease;
+}
+.restaurant div.places div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 25px 15px;
+}
+.restaurant div.places main{
+    width: 300px;
+    height: 250px;
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: relative;
+    z-index: 1;
+
+}
+.restaurant div.places div span{
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    justify-content: start;
+}
+.restaurant div.places div img{
+    position: relative;
+    width: 20px;
+    height: 20px;   
+}
+.restaurant div.places div p{
+    color: #8f8f8f;
+}
+/* ----------- MORE RESTAURANTS BUTTON */
+.restaurants button {
+    width: 300px;
+    color: #ff8c00;
+    border: 1px solid #ff8c00;
+    padding: 15px 0PX;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    background-color: #ff8c001e;
+}
+/* -----RATES------- */
+div.restaurant div.places span.rates{
+    position: absolute;
+    z-index: 3;
+    background-color: #f1f1f1;
+    margin: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    /* backdrop-filter: blur(50%); */
+}
+div.restaurant div.places span.rates img{
+    width: 18px;
+    height: 18px;
+}
+/* -------------OFFER--------------- */
+div.offer {
+    font-weight: bold;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+}
+div.offer div{
+    color: #ffffff;
+    position: relative;
+    z-index: 1;
+    width: 95%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: #ff8c00;
+    border-radius: 10px;
+}
+div.offer div nav{
+    
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+div.offer div nav button{
+    width: 200px;
+    height: 50px;
+    font-size: 1.1rem;
+    outline: none;
+    border: none;
+    background-color: #ffffff;
+    border-radius: 6px;
+    color: #ff8c00;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 10px 10px 10px #5050501c;
+}
+div.offer div img{
+    box-shadow: 10px 10px 10px #5050501c,-10px -10px 10px #5050501c;
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    transform: rotate(5deg);
+    transition: 0.3s ease;
+}
+div.offer div img:hover{
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    transform: rotate(0deg);
+    box-shadow: 10px 10px 10px #5050501c,-10px -10px 10px #5050501c;
+}
+
+div.offer div h1{
+
+    font-size: 3rem;
+}
+div.offer div label{
+    font-size: 1rem;
+    background-color: #ffb862cb;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+div.offer div span{
+    border: 1px solid #ffffff5d;
+    font-size: 1.3rem;
+    background-color: #ffb86285;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+/* ----ABOUT---- */
+div.about{
+    margin-top: 60px;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    gap: 40px;
+    /* background-color: rgb(11, 202, 84); */
+}
+div.about > div{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    gap: 20px;
+}
+div.about div p{
+    cursor: pointer;
+    color: #969696;
+}
+div.about div span.icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+div.about div span.icons div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #96969652;
+    border-radius: 50%;
+}
+div.about div span.icons img{
+    width: 20px;
+    height: 20px;
+}
+div.about div.available{
+    cursor: pointer;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    width: 300px;
+    border-radius: 10px;
+    padding: 8px 20px;
+}
+div.about div.available img{
+    width: 30px;
+    height: 30px;
+}
+div.about div.available h3{
+    color: white;
+}
+div.about div.available h3 span{
+    color: #969696;
+    font-size: 13px;
+    font-weight: 600;
+}
+div.about span.bottomLogo{
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    
+}
+div.about span.bottomLogo div{
+    width: 25px;
+    height: 30px;
+    border-radius: 4px;
+    background-color: #ff8c00; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+div.about span.bottomLogo div img{
+    width: 25px;
+    height: 25px;
+}
+/* --------------------FOOTER SECTION---------------- */
+footer{
+    width: 100%;
+    height: 10vh;
+    border-top: 4px solid rgb(241, 241, 241);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: #969696;
+    padding: 0px 40px;
+}
+footer span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+footer a{
+    text-decoration: none;
+    color: #969696;
+}
